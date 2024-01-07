@@ -15,7 +15,10 @@ pipeline {
      stage('install'){
        steps {
           sh 'mvn install'
+       }
+    }
+     stage('package'){
+       steps {
           sh 'mvn package'
        }
     }
-    
